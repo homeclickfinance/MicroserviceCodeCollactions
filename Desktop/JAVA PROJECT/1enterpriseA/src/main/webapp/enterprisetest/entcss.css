@@ -1,0 +1,28 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 15, 2022, 10:14:16 AM
+    Author     : homec
+*/
+
+@import url('https://unpkg.com/primeflex@3.1.2/primeflex.css');
+@import url('https://unpkg.com/primeflex/themes/saga-blue.css');
+@import url('https://unpkg.com/primeflex/themes/arya-blue.css');
+@import url('https://unpkg.com/primeflex/themes/vela-blue.css');
+@import url('https://unpkg.com/primeflex@3.1.2/primeflex.css');
+@import url('https://unpkg.com/primeflex@3.1.2/primeflex.css');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+
+
+body {
+
+  background: #419544;
+  
+  
+
+}

@@ -1,0 +1,113 @@
+<!--
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:rich="http://richfaces.org/rich"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:p="http://primefaces.org/iu"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" >
+      
+    
+    
+    
+    
+    <h:head id="head">
+        <title>Facelet Title</title>
+        
+        
+      <h:outputStylesheet name="externalstyleingsheet.css"/>  
+      <h:outputStylesheet name="/Style.css" library="css"/>
+      <h:outputStylesheet name="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+      <h:outputStylesheet library="webjars" name="font-awesome/4.7.0/css/font-awesome.min-jsf.css" />
+      <h:outputLink name=""/>
+      <h:link outcome="<a href="https://docs.oracle.com/javaee/7/tutorial/jsf-page002.htm#BNASO>linking webpage</a>" value="Message" />
+      
+    </h:head>
+    
+    <h:body>
+     
+        
+        <h:form id="form">  
+            
+            
+        <h:graphicImage url="#{resource['images:duke.waving.gif']}"
+                        alt="Duke waving his hand"/>
+        <h2>Hello, #{hello.name}!</h2>
+        <p>I've made your
+            <h:link outcome="personal" value="personal greeting page!"
+                    includeViewParams="true">
+                <f:param name="Result" value="#{hello.name}"/>
+            </h:link>
+        </p>
+        <h:commandButton id="back" value="Back" action="index" />
+            
+            
+            
+            <h:outputScript name="hello.js"/>
+            <h:outputStylesheet name="hello.css"/>
+            
+            
+        </h:form>
+        
+        <h:inputText value="#{bean.message}">
+        <f:ajax /> 
+        </h:inputText>
+        
+        // gouping ajax componient
+        
+        <f:ajax>
+        <h:form>
+            <h:inputText id="input1" value="#{user.name}"/> 
+            <h:commandButton id="Submit"/>
+        </h:form>
+        </f:ajax>
+        
+        <f:ajax event="click" render="@all">
+        <h:form>
+            <h:inputText id="input1" value="#{user.name}"/> 
+            <h:commandButton id="Submit"/> 
+        </h:form>
+         </f:ajax>
+        
+        <f:ajax event="click" render="@all">
+        ...
+        <h:commandButton id="Submit">
+            <f:ajax event="mouseover"/>
+        </h:commandButton>
+        ...
+        </f:ajax>
+        
+        // gouping ajax componient    
+        
+        
+        <h:outputLink value="javadocs">Documentation for this demo</h:outputLink>
+        
+        
+        <h:link value="Login page" outcome="<a href="JavaServerFaces/faces/login.xhtml"> </a> />
+        
+        <h:link value="Login page + Param " outcome="<a href="/JavaServerFaces/faces/login.xhtml?username=mkyong"></a>" 
+	<f:param name="username" value="mkyong" />
+        </h:link>
+        
+        
+       <h:outputScript name="externaljavascript.js"/>  
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       <h:outputScript name="bootstrap-3.3.7-dist/js/bootstrap.min.js"/
+       
+       
+    </h:body>
+</html>
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+</html>
